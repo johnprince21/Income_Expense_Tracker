@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(234, 234, 234);
+    display: grid;
+    place-items: center;
+
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: rgb(250, 247, 247);
+    box-shadow: rgb(0, 0, 0);
+    display: flex;
+    user-select: none;
+}
+
+.ledger {
+    background-color: rgb(59, 59, 87);
+    padding: 20px;
+    color: white;
+    flex: 1;
+
+}
+
+.ledger h2 {
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+.ledger h2 {
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+}
+
+.ledger h4 {
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+}
+
+.ledger h1 {
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+}
+
+.inc-exp-box {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+
+}
+
+
+.inc-exp-box div {
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 18px;
+    flex: 1;
+    border-radius: 2px;
+}
+
+.inc-exp-box div p {
+    font-size: 22px;
+}
+
+.inc-exp-box div.inc {
+    color: rgb(76, 200, 76);
+    border: 3px solid green;
+
+}
+
+.inc-exp-box div.exp {
+    color: rgb(226, 62, 95);
+    border: 3px solid rgb(193, 23, 57);
+
+}
+
+#form {
+    padding: 5px;
+    margin-top: 17px;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 1px solid;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btn {
+    display: block;
+    margin-top: 20px;
+    background-color: goldenrod;
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    width: 100%;
+
+
+
+}
+
+.transaction {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.transaction h3 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+.trans {
+    list-style-type: none;
+}
+
+.trans li {
+    background-color: white;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15)0px 0px 0px 1px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    justify-self: space-between;
+    font-weight: 400;
+}
+
+.trans li.inc {
+    border-left: 5px solid green;
+}
+
+.trans li.exp {
+    border-left: 5px solid rgb(193, 23, 57);
+}
+
+.btn-del {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(235, 108, 108);
+    border: none;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    opacity: 0;
+
+
+}
+
+
+.trans li:hover .btn-del {
+    opacity: 1;
+}
+
+;
